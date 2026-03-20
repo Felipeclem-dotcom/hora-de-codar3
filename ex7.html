@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Escreva um algoritmo para ler as notas de avaliações de um aluno, calcule e imprima a média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota. São 6 notas ao total.
+    //Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, deve ser solicitado um novo valor ao usuário. 
+
+    var num1 = parseInt(prompt("Digite o 1° número: "));
+       while (num1 > 10 || num1 < 0) {
+        num1 = parseInt(prompt("Digite o 1° número novamente!: "));
+       }
+       
+       var num2 = parseInt(prompt("Digite o 2° número: "));
+       while (num2 > 10 || num2 < 0) {
+        num2 = parseInt(prompt("Digite o 2° número novamente!: "));
+       }
+
+       var num3 = parseInt(prompt("Digite o 3° número: "));
+       while (num3 > 10 || num3 < 0) {
+        num3 = parseInt(prompt("Digite o 3° número novamente!: "));
+       }
+
+       var num4 = parseInt(prompt("Digite o 4° número: "));
+       while (num4 > 10 || num4 < 0) {
+        num4 = parseInt(prompt("Digite o 4° número novamente!: "));
+       }
+
+       var num5 = parseInt(prompt("Digite o 5° número: "));
+       while (num5 > 10 || num5 < 0) {
+        num5 = parseInt(prompt("Digite o 5° número novamente!: "));
+       }
+
+       var num6 = parseInt(prompt("Digite o 6° número: "));
+       while (num6 > 10 || num6 < 0) {
+        num6 = parseInt(prompt("Digite o 6° número novamente!: "));
+       }
+
+       var soma = num1 + num2 + num3 + num4 + num5 + num6
+
+
+       if (soma / 6 >= 5){
+        alert("Você passou no teste, sua media é: " + soma / 6) 
+       }
+
+       else {
+        alert("Tente novamente")
+       }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
