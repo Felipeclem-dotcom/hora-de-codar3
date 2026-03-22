@@ -7,21 +7,34 @@
     <script>
         //Escreva um programa em que o usuário informe 10 valores e escreva quantos desses valores lidos estão entre os números 24 e 42 (incluindo os valores 24 e 42) e quantos deles estão fora deste intervalo.
 
-       var num1 = parseInt(prompt("Digite o 1° número: "));
-       var num2 = parseInt(prompt("Digite o 2° número: "));
-       var num3 = parseInt(prompt("Digite o 3° número: "));
-       var num4 = parseInt(prompt("Digite o 4° número: "));
-       var num5 = parseInt(prompt("Digite o 5° número: "));
-       var num6 = parseInt(prompt("Digite o 6° número: "));
-       var num7 = parseInt(prompt("Digite o 7° número: "));
-       var num8 = parseInt(prompt("Digite o 8° número: "));
-       var num9 = parseInt(prompt("Digite o 9° número: "));
-       var num10 = parseInt(prompt("Digite o 10° número: "));
+        var dentro = 0;
+        var fora = 0;
 
-       for (i=0; i<=10;i++){
-            var num1 = parseInt(prompt("Digite o 1° número: "));
-       }
+        var num1 = parseInt(prompt("Digite o 1° número: "));
+        var num2 = parseInt(prompt("Digite o 2° número: "));
+        var num3 = parseInt(prompt("Digite o 3° número: "));
+        var num4 = parseInt(prompt("Digite o 4° número: "));
+        var num5 = parseInt(prompt("Digite o 5° número: "));
+        var num6 = parseInt(prompt("Digite o 6° número: "));
+        var num7 = parseInt(prompt("Digite o 7° número: "));
+        var num8 = parseInt(prompt("Digite o 8° número: "));
+        var num9 = parseInt(prompt("Digite o 9° número: "));
+        var num10 = parseInt(prompt("Digite o 10° número: "));
 
+        if (num1 >= 24 && num1 <= 42) dentro++; else fora++;
+        if (num2 >= 24 && num2 <= 42) dentro++; else fora++;
+        if (num3 >= 24 && num3 <= 42) dentro++; else fora++;
+        if (num4 >= 24 && num4 <= 42) dentro++; else fora++;
+        if (num5 >= 24 && num5 <= 42) dentro++; else fora++;
+        if (num6 >= 24 && num6 <= 42) dentro++; else fora++;
+        if (num7 >= 24 && num7 <= 42) dentro++; else fora++;
+        if (num8 >= 24 && num8 <= 42) dentro++; else fora++;
+        if (num9 >= 24 && num9 <= 42) dentro++; else fora++;
+        if (num10 >= 24 && num10 <= 42) dentro++; else fora++;
+
+        alert("Quantidade entre 24 e 42: " + dentro);
+        alert("Quantidade fora de 24 e 42: " + fora);
+        
     </script>
 </head>
 <body>
